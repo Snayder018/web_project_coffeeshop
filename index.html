@@ -1,198 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Café de especialidad en Triple Peaks. ¡Ven a disfrutar café, estudiar y compartir en un ambiente cómodo y moderno!"
-    >
-    <meta name="author" content="Snayder" >
+    />
+    <meta name="author" content="Snayder" />
     <meta
       name="keywords"
       content="cafetería, café especialidad, recetas café, Triple Peaks"
-    >
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" >
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./vendor/normalize.css" >
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <!-- Fuentes y estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif:ital@1&display=swap"
       rel="stylesheet"
-    >
-   <link rel="stylesheet" href="blocks/page.css">
-   <link rel="stylesheet" href="pages/index.css">
-
-
-    <title>Cafetería</title>
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Cafetería Triple Peaks</title>
   </head>
-  <body>
-    <div class="page">
-      <header class="header">
-        <nav class="nav">
-          <img
-            src="./images/logo_coffeeshop_dark.svg"
-            alt="Logotipo de  la cafeteria Triple Peaks"
-            class="nav__logo"
-          >
 
-          <ul class="nav__links">
-            <li>
-              <a class="nav__link" href="#recipes">Recetas</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#reservation">Reservar una mesa</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#footer">Contactos</a>
-            </li>
-          </ul>
-        </nav>
+  <body class="page">
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="./images/logo_coffeeshop_dark.svg"
+          alt="Logotipo de la cafetería Triple Peaks"
+          class="logo"
+        />
+        <ul class="nav__links">
+          <li><a href="#recipes" class="nav__link">Recetas</a></li>
+          <li><a href="#reservation" class="nav__link">Reservar una mesa</a></li>
+          <li><a href="#footer" class="nav__link">Contactos</a></li>
+        </ul>
+      </nav>
 
-        <h1 class="header__title">
-          <span class="header__accent">Cafe de especialidad </span>
-          <br >Triple Peaks
-        </h1>
+      <h1 class="title">
+        <span class="span-accent">Café de especialidad</span><br />
+        Triple Peaks
+      </h1>
 
-        <p class="header__description">
-          ¡Te damos la bienvenida a nuestra zona de estudio!. Aqui tenemos cafe
-          para darte energia y motivar tu creatividad.
+      <p class="description">
+        ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café 
+        para darte energía y motivar tu creatividad.
+      </p>
+
+      <img
+        src="./images/inside_coffee_shop.png"
+        alt="Ilustración del interior de la cafetería"
+        class="image"
+      />
+</header>
+
+<!-- 🔽 NUEVO BLOQUE HORARIO: DEBE IR FUERA DEL HEADER -->
+<section class="schedule">
+  <div class="schedule__group">
+  <p class="paragraph"><strong>Horario:</strong></p>
+  <p class="paragraph">Lunes a Viernes (10:00h a 19:00h)</p>
+  <p class="paragraph">Sábados y Domingos (11:00h a 18:00h)</p>
+  </div>
+  <p class="paragraph">Avenida del Éxito 200, Ciudad Triple Peaks</p>
+</section>
+
+    <main class="content">
+      <section class="recipes" id="recipes">
+        <h2 class="recipes__title">Recetas</h2>
+        <p class="recipes__subtitle">
+          Echa un vistazo a las recetas que hemos reunido para que elabores tus propios snacks.
         </p>
 
-        <img
-          src="./images/inside_coffee_shop.png"
-          alt="Ilustracion 'Dentro de la Cafeteria'"
-          class="header__image"
-        >
-
-        <div class="header__footer">
-          <div class="header__schedule">
-            <p class="header__paragraph">Horario:</p>
-
-            <p class="header__paragraph">Lunes a Viernes (10:00h a 19:00h)</p>
-
-            <p class="header__paragraph">
-              Sabados y Domingos (11:00h a 18:00h)
-            </p>
+        <div class="recipes__video">
+          <div class="recipes__item">
+            <iframe
+              class="recipes__iframe"
+              src="https://www.youtube.com/embed/1a2b3c4d5e6?si=example"
+              title="Receta en Aeropress"
+              allowfullscreen
+            ></iframe>
+            <div class="recipes__caption">
+              <p>Receta en Aeropress</p>
+              <p>~5 min</p>
+            </div>
           </div>
-          <div class="header__address">
-            <p class="header__paragraph">
-              Avenida del Exito 200, Ciudad Triple Peaks
-            </p>
+
+          <div class="recipes__item">
+            <iframe
+              class="recipes__iframe"
+              src="https://www.youtube.com/embed/8j1b2k3c4d5?si=example"
+              title="Receta en cafetera francesa"
+              allowfullscreen
+            ></iframe>
+            <div class="recipes__caption">
+              <p>Receta en cafetera francesa</p>
+              <p>~15 min</p>
+            </div>
           </div>
         </div>
-      </header>
-      <main class="content">
-        <section class="recipes" id="recipes">
-          <h2 class="recipes__title">Recetas</h2>
-          <p class="recipes__subtitle">
-            Echa un vistazo a las recetas que hemos reunido para que elabores
-            tus propios snacks.
-          </p>
+      </section>
 
-          <div class="recipes__video">
-            <div class="recipes__item">
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/1a2b3c4d5e6?si=example"
-                title="Receta en Aeropress"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <div class="recipes__caption">
-                <p>Receta en Aeropress</p>
-                <p>~5 min</p>
-              </div>
-            </div>
+      <section class="reservation" id="reservation">
+        <h3 class="reservation__title">Reserva una mesa</h3>
+        <form class="reservation__form" action="#">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Nombre" required />
 
-            <div class="recipes__item">
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/8j1b2k3c4d5?si=example"
-                title="Receta en cafetera francesa"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <div class="recipes__caption">
-                <p>Receta en cafetera francesa</p>
-                <p>~15 min</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="reservation" id="reservation">
-          <h3 class="reservation__title">Reserva una mesa</h3>
-          <form class="reservation__form" action="#">
-            <div class="form-group">
-              <label for="name">Nombre</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="nombre"
-                required
-              >
-            </div>
+          <label for="comensales">Número de comensales</label>
+          <input type="number" id="comensales" name="comensales" placeholder="1-8" min="1" max="8" required />
 
-            <div class="form-group">
-              <label for="comensales">numero de comensales</label>
-              <input
-                type="number"
-                id="comensales"
-                name="Comensales"
-                placeholder="1-8"
-                min="1"
-                max="8"
-                required
-              >
-            </div>
+          <label for="fecha">Fecha y hora</label>
+          <input type="datetime-local" id="fecha" name="fecha" required />
 
-            <div class="form-group">
-              <label for="fecha">fecha y hora</label>
-              <input type="datetime-local" id="fecha" name="fecha" required >
-            </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email@email.com" required />
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="email@email.com"
-                required
-              >
-            </div>
+          <label class="form-checkbox" for="terminos">
+            <input class="reservation__checkbox" type="checkbox" id="terminos" required />
+            <span>Acepto los términos de uso</span>
+          </label>
 
-            <div class="form-group">
-              <label class="form-checkbox" for="terminos">
-                <input
-                  class="reservation__checkbox"
-                  type="checkbox"
-                  id="terminos"
-                  required
-                >
-                <span>Acepto los términos de uso</span>
-              </label>
-            </div>
+          <button type="submit" class="reservation__button">Reservar una mesa</button>
+        </form>
+      </section>
+    </main>
 
-            <div class="form-group">
-              <button type="submit">Reservar una mesa</button>
-            </div>
-          </form>
-        </section>
-      </main>
-      <footer class="footer" id="footer">
-        <p>© 2025 Anderson Snayder Cortez</p>
-        <div class="footer__links">
-          <a class="footer__link" href="#">Facebook</a>
-          <a class="footer__link" href="#">Instagram</a>
-        </div>
-      </footer>
-    </div>
+    <footer class="footer">
+      <p class="paragraph">© 2025 Anderson Snayder Cortez</p>
+      <div class="footer__links">
+        <a class="footer__link" href="#">Facebook</a>
+        <a class="footer__link" href="#">Instagram</a>
+      </div>
+    </footer>
   </body>
 </html>
