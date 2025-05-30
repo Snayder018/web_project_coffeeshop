@@ -6,46 +6,45 @@
 @import url("../blocks/reservation.css");
 @import url("../blocks/footer.css");
 
-/* Fondo general */
 .page {
   background-color: #ffffff;
   font-family: "Inter", sans-serif;
   margin: 0;
 }
 
-/* Encabezado */
-.header {
-  min-height: 720px;
-  max-height: 800px;
-  height: 100vh;
-  padding: 30px 80px 40px;
-  position: relative;
-  box-sizing: border-box;
-}
 body {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   color: #000000;
 }
 
-/* Logo */
+.header {
+  position: relative;
+  padding: 60px 80px 0; /* más espacio arriba, menos abajo */
+  height: 720px; /* altura fija igual al brief */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("../images/background_header.svg"); /* o el nombre real */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .logo {
   width: 105px;
   height: 39px;
-  margin-bottom: 28px;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
 }
 
-/* Navegación */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 28px;
 }
 
 .nav__links {
@@ -57,78 +56,90 @@ body {
 }
 
 .nav__link {
-  text-decoration: none;
-  color: black;
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
 }
 
-/* Título principal */
 .title {
   font-family: "Inter", Arial, sans-serif;
   font-size: 58px;
   font-weight: 800;
   line-height: 72px;
   margin: 124px 0 0;
+  max-width: 640px;
+  z-index: 2;
+}
+
+.title__bold {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 72px;
   letter-spacing: -1px;
   color: #000000;
 }
-.schedule {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 40px 80px;
-  max-width: 683px;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #000000;
-  box-sizing: border-box;
-}
 
-.schedule .paragraph {
-  margin: 8px 0;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
-  color: #000000;
-}
-
-/* Título en cursiva azul */
 .span-accent {
-  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "Noto Serif", serif;
   font-style: italic;
-  font-weight: normal;
   font-size: 58px;
   line-height: 72px;
   color: #2f80ed;
 }
 
-/* Descripción */
 .description {
-  margin-top: 28px;
+  margin-top: 24px;
   max-width: 600px;
-  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "Noto Serif", serif;
   font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
   line-height: 30px;
-  color: #000000;
+  z-index: 2;
 }
 
-/* Imagen principal */
 .image {
   position: absolute;
-  top: 124px;
+  top: 100px;
   right: 80px;
   width: 646px;
-  height: 568px;
+  height: auto;
+  z-index: 1;
+}
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  background-color: #ffffff;
+  box-sizing: border-box;
 }
 
-.header .footer .paragraph {
+.schedule__group,
+.schedule__address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.schedule__group {
+  max-width: 50%;
+}
+
+.schedule__address {
+  max-width: 50%;
+  align-items: flex-end; /* para que la dirección quede alineada a la derecha */
+  justify-content: flex-end;
+}
+
+.schedule .paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
   margin: 0;
-  color: #ffffff !important;
+  color: #000000;
 }
 
 .footer__links {
@@ -141,7 +152,6 @@ body {
   color: #2f80ed;
 }
 
-/* Párrafos del horario */
 footer.footer .paragraph {
   margin-bottom: 5px;
   font-family: "Inter", Arial, sans-serif;
@@ -149,8 +159,4 @@ footer.footer .paragraph {
   font-weight: 500;
   line-height: 20px;
   color: #838383;
-}
-.paragraph a {
-  text-decoration: none;
-  color: inherit;
 }
