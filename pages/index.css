@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
-  color: #000000;
+  color: #6f6f6f;
 }
 
 .header {
@@ -70,7 +70,7 @@ body {
   font-weight: 800;
   line-height: 72px;
   margin: 124px 0 0;
-  max-width: 640px;
+  max-width: 709px;
   z-index: 2;
 }
 
@@ -92,10 +92,10 @@ body {
 
 .description {
   margin-top: 24px;
-  max-width: 600px;
+  max-width: 683px;
   font-family: "Noto Serif", serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 20px; /* Aumenta el tamaño de fuente */
+  line-height: 30px; /* Mejora la legibilidad */
   z-index: 2;
 }
 

@@ -1,9 +1,14 @@
 .recipes {
   background-image: url("../images/background_recipes.svg");
+  background-color: #0a2850;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 100px 80px;
+  padding: 140px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* 👈 clave para alinear todo a la izquierda */
 }
 
 .recipes__title {
@@ -11,7 +16,7 @@
   font-size: 44px;
   font-weight: 800;
   line-height: 52px;
-  color: #000000;
+  color: #ffffff;
   margin: 0 0 20px;
 }
 
@@ -20,23 +25,27 @@
   font-size: 20px;
   font-weight: normal;
   line-height: 30px;
-  color: #000000;
+  color: #ffffff;
   max-width: 640px;
-  margin: 0 auto 60px;
+  margin: 0 0 60px; /* eliminamos el auto centrado */
+  text-align: left; /* alineado a la izquierda */
 }
 
 .recipes__video {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap; /* ✅ permite que los items se ajusten si no entran */
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%; /* ✅ se asegura de usar todo el ancho posible */
+  max-width: 1100px; /* opcional: para no estirarlo demasiado en pantallas grandes */
+  margin: 0 auto; /* ✅ centra el bloque dentro del padre */
 }
 
-.recipes__item {
+.recipes__video-item {
+  flex: 0 1 480px; /* 480px + 40px gap = 1000px total, cabe en 1100px */
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 480px;
 }
 
 .recipes__iframe {
@@ -47,10 +56,27 @@
 }
 
 .recipes__caption {
-  margin-top: 16px;
+  margin-top: 24px;
+  width: 100%;
+  text-align: center; /* ✅ añade esto */
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  color: #000000;
+  color: #ffffff;
+}
+.recipes__caption-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.caption__text,
+.caption__time {
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff; /* O el color que quieras */
 }
