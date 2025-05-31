@@ -23,16 +23,17 @@ body {
 
 .header {
   position: relative;
-  padding: 60px 80px 0; /* más espacio arriba, menos abajo */
-  height: 720px; /* altura fija igual al brief */
+  height: 100vh;
+  padding: 30px 80px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url("../images/background_header.svg"); /* o el nombre real */
+  background-image: url("../images/background_header.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  overflow: hidden; /* ✅ Importante para contener imagen */
 }
 
 .logo {
@@ -45,11 +46,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 28px;
+  z-index: 2;
+  position: relative;
 }
 
 .nav__links {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -66,10 +69,11 @@ body {
 
 .title {
   font-family: "Inter", Arial, sans-serif;
+  position: relative;
   font-size: 58px;
   font-weight: 800;
   line-height: 72px;
-  margin: 124px 0 0;
+  margin: 183px 0 0;
   max-width: 709px;
   z-index: 2;
 }
@@ -91,29 +95,36 @@ body {
 }
 
 .description {
-  margin-top: 24px;
+  margin-top: 80px;
   max-width: 683px;
   font-family: "Noto Serif", serif;
   font-size: 20px; /* Aumenta el tamaño de fuente */
   line-height: 30px; /* Mejora la legibilidad */
+  position: relative;
   z-index: 2;
 }
 
 .image {
   position: absolute;
-  top: 100px;
-  right: 80px;
+  top: 124px; /* más abajo para que no tape el título */
+  right: 5px;
   width: 646px;
-  height: auto;
+  height: 568px;
+  max-height: 80%;
+  object-fit: contain;
   z-index: 1;
 }
+
 .schedule {
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 40px 80px;
-  background-color: #ffffff;
+  backdrop-filter: blur(2px); /* da efecto de cristal, como en la maqueta */
   box-sizing: border-box;
+  z-index: 2;
+  position: relative;
 }
 
 .schedule__group,
@@ -139,7 +150,7 @@ body {
   line-height: 28px;
   font-weight: 500;
   margin: 0;
-  color: #000000;
+  color: #6f6f6f;
 }
 
 .footer__links {

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta
       name="description"
       content="Café de especialidad en Triple Peaks. ¡Ven a disfrutar café, estudiar y compartir en un ambiente cómodo y moderno!"
@@ -55,10 +55,7 @@
         alt="Ilustración del interior de la cafetería"
         class="image"
       />
-</header>
-
-<!-- 🔽 NUEVO BLOQUE HORARIO: DEBE IR FUERA DEL HEADER -->
-<section class="schedule">
+      <div class="schedule">
   <div class="schedule__group">
     <p class="paragraph"><strong>Horario:</strong></p>
     <p class="paragraph">Lunes a Viernes: 8:00 - 22:00</p>
@@ -67,7 +64,9 @@
   <div class="schedule__address">
     <p class="paragraph">Avenida del Éxito 200,Ciudad Triple Peaks</p>
   </div>
-</section>
+</div>
+
+</header>
 
     <main class="content">
       <section class="recipes" id="recipes">
@@ -84,11 +83,11 @@
     title="Receta en Aeropress"
     allowfullscreen
   ></iframe>
-  <div class="recipes__caption-row">
-  <p class="caption__text">Receta en Aeropress</p>
-  <p class="caption__time">~5 min</p>
+  <div class="recipes__caption">
+  <span class="caption__text">Receta en Aeropress</span>
+  <span class="caption__time">~5 min</span>
 </div>
-  </div>
+    </div>
 
 <div class="recipes__video-item">
   <iframe
@@ -97,10 +96,9 @@
     title="Receta en cafetera francesa"
     allowfullscreen
   ></iframe>
-  <div class="recipes__caption">
-    <div class="recipes__caption-row">
-      <p class="caption__text">Receta en cafetera francesa</p>
-      <p class="caption__time">~15 min</p>
+   <div class="recipes__caption">
+  <span class="caption__text">Receta en cafetera francesa</span>
+        <span class="caption__time">~15 min</span>
     </div>
 </div>
 </div>
