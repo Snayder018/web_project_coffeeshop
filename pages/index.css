@@ -33,7 +33,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  overflow: hidden; /* ✅ Importante para contener imagen */
+  overflow: hidden;
 }
 
 .logo {
@@ -98,15 +98,15 @@ body {
   margin-top: 80px;
   max-width: 683px;
   font-family: "Noto Serif", serif;
-  font-size: 20px; /* Aumenta el tamaño de fuente */
-  line-height: 30px; /* Mejora la legibilidad */
+  font-size: 20px;
+  line-height: 30px;
   position: relative;
   z-index: 2;
 }
 
 .image {
   position: absolute;
-  top: 124px; /* más abajo para que no tape el título */
+  top: 124px;
   right: 5px;
   width: 646px;
   height: 568px;
@@ -121,7 +121,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 40px 80px;
-  backdrop-filter: blur(2px); /* da efecto de cristal, como en la maqueta */
+  backdrop-filter: blur(2px);
   box-sizing: border-box;
   z-index: 2;
   position: relative;
@@ -140,7 +140,7 @@ body {
 
 .schedule__address {
   max-width: 50%;
-  align-items: flex-end; /* para que la dirección quede alineada a la derecha */
+  align-items: flex-end;
   justify-content: flex-end;
 }
 

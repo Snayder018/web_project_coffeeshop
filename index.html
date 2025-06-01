@@ -6,22 +6,22 @@
     <meta
       name="description"
       content="Café de especialidad en Triple Peaks. ¡Ven a disfrutar café, estudiar y compartir en un ambiente cómodo y moderno!"
-    />
-    <meta name="author" content="Snayder" />
+    >
+    <meta name="author" content="Snayder" >
     <meta
       name="keywords"
       content="cafetería, café especialidad, recetas café, Triple Peaks"
-    />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    >
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="./vendor/normalize.css">
 
-    <!-- Fuentes y estilos -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif:ital@1&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./pages/index.css" />
+    >
+    <link rel="stylesheet" href="./pages/index.css" >
     <title>Cafetería Triple Peaks</title>
   </head>
 
@@ -32,7 +32,7 @@
           src="./images/logo_coffeeshop_dark.svg"
           alt="Logotipo de la cafetería Triple Peaks"
           class="logo"
-        />
+        >
         <ul class="nav__links">
           <li><a href="#recipes" class="nav__link">Recetas</a></li>
           <li><a href="#reservation" class="nav__link">Reservar una mesa</a></li>
@@ -41,7 +41,7 @@
       </nav>
 
       <h1 class="title">
-        <span class="span-accent">Café de especialidad</span><br />
+        <span class="span-accent">Café de especialidad</span><br >
          <span class="title__bold">en Triple Peaks</span>
 </h1>
 
@@ -54,7 +54,7 @@
         src="./images/inside_coffee_shop.png"
         alt="Ilustración del interior de la cafetería"
         class="image"
-      />
+      >
       <div class="schedule">
   <div class="schedule__group">
     <p class="paragraph"><strong>Horario:</strong></p>
@@ -83,7 +83,7 @@
     title="Receta en Aeropress"
     allowfullscreen
   ></iframe>
-  <div class="recipes__caption">
+  <div class="caption">
   <span class="caption__text">Receta en Aeropress</span>
   <span class="caption__time">~5 min</span>
 </div>
@@ -96,33 +96,31 @@
     title="Receta en cafetera francesa"
     allowfullscreen
   ></iframe>
-   <div class="recipes__caption">
+   <div class="caption">
   <span class="caption__text">Receta en cafetera francesa</span>
         <span class="caption__time">~15 min</span>
     </div>
 </div>
 </div>
-
-
       </section>
 
       <section class="reservation" id="reservation">
         <h3 class="reservation__title">Reserva una mesa</h3>
         <form class="reservation__form" action="#">
           <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Nombre" required />
+          <input type="text" id="name" name="name" placeholder="Nombre" required >
 
           <label for="comensales">Número de comensales</label>
-          <input type="number" id="comensales" name="comensales" placeholder="1-8" min="1" max="8" required />
+          <input type="number" id="comensales" name="comensales" placeholder="1-8" min="1" max="8" required >
 
           <label for="fecha">Fecha y hora</label>
-          <input type="datetime-local" id="fecha" name="fecha" required />
+          <input type="datetime-local" id="fecha" name="fecha" required >
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="email@email.com" required />
+          <input type="email" id="email" name="email" placeholder="email@email.com" required >
 
           <label class="form-checkbox" for="terminos">
-            <input class="reservation__checkbox" type="checkbox" id="terminos" required />
+            <input class="reservation__checkbox" type="checkbox" id="terminos" required >
             <span>Acepto los términos de uso</span>
           </label>
 

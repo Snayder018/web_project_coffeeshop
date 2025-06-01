@@ -3,12 +3,12 @@
   background-color: #0a2850;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100% 100%; /* ✅ se ajusta completamente arriba y abajo sin cortar */
-  padding: 40px 80px 100px; /* ✅ menos padding arriba */
+  background-size: 100% 100%;
+  padding: 40px 80px 100px;
   width: 100%;
-  min-height: 100vh; /* ✅ asegura que el fondo ocupe toda la altura */
+  min-height: 100vh;
   box-sizing: border-box;
-  display: flex; /* ✅ permite alinear contenido verticalmente */
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -46,7 +46,7 @@
 .recipes__video {
   display: flex;
   gap: 40px;
-  justify-content: center; /* 👈 CENTRA LOS VIDEOS */
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -64,8 +64,8 @@
   border-radius: 16px;
 }
 
-.recipes__caption {
-  display: flex; /* ✅ alinea en una sola línea */
+.caption {
+  display: flex;
   justify-content: space-between;
   font-family: "Inter", Arial, sans-serif;
   width: 100%;
@@ -79,7 +79,7 @@
 
 .recipes__caption-row {
   display: none;
-  justify-content: space-between; /* 👈 Esto alinea tiempo a la derecha */
+  justify-content: space-between;
   width: 100%;
   margin-top: 0px;
 }
