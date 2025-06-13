@@ -65,50 +65,11 @@ body {
 .image {
   position: absolute;
   top: 124px;
-  right: 5px;
+  right: 80px; /* en vez de 5px, para que respete el margen derecho como la maqueta */
   width: 646px;
   height: 568px;
-  max-height: 80%;
   object-fit: contain;
   z-index: 1;
-}
-
-.schedule {
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 80px;
-  backdrop-filter: blur(2px);
-  box-sizing: border-box;
-  z-index: 2;
-  position: relative;
-}
-
-.schedule__group,
-.schedule__address {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.schedule__group {
-  max-width: 50%;
-}
-
-.schedule__address {
-  max-width: 50%;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.schedule .paragraph {
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
-  margin: 0;
-  color: #6f6f6f;
 }
 
 .recipes {
@@ -338,4 +299,50 @@ footer.footer .paragraph {
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.address {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.schedule {
+  margin-top: auto;
+  margin-bottom: 80px; /* distancia exacta desde el fondo del header */
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.schedule__group,
+.schedule__address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.schedule__group {
+  max-width: 50%;
+}
+
+.schedule__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 50%;
+  text-align: right;
+  margin-top: 56px;
+}
+
+.schedule .paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+  color: #6f6f6f;
 }
