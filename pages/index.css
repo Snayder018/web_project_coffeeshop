@@ -5,3 +5,337 @@
 @import url("../blocks/recipes.css");
 @import url("../blocks/reservation.css");
 @import url("../blocks/footer.css");
+
+.page {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #6f6f6f;
+}
+
+.logo {
+  width: 105px;
+  height: 39px;
+}
+
+.title {
+  font-family: "Inter", Arial, sans-serif;
+  position: relative;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 183px 0 0;
+  max-width: 709px;
+  z-index: 2;
+}
+
+.title__bold {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #000000;
+}
+
+.span-accent {
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+.description {
+  margin-top: 80px;
+  max-width: 683px;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+  max-height: 80%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.schedule {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  backdrop-filter: blur(2px);
+  box-sizing: border-box;
+  z-index: 2;
+  position: relative;
+}
+
+.schedule__group,
+.schedule__address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.schedule__group {
+  max-width: 50%;
+}
+
+.schedule__address {
+  max-width: 50%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.schedule .paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+  color: #6f6f6f;
+}
+
+.recipes {
+  background-image: url("../images/background_recipes.svg");
+  background-color: #0a2850;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  padding: 40px 80px 100px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recipes__content {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.recipes__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  color: #ffffff;
+  text-align: left;
+  max-width: 580px;
+  margin: 0 0 24px;
+}
+
+.recipes__subtitle {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  max-width: 438px;
+  text-align: left;
+  margin: 0 0 40px;
+}
+
+.recipes__video {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.recipes__video-item {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes__iframe {
+  width: 100%;
+  height: 273px;
+  border: none;
+  border-radius: 16px;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", Arial, sans-serif;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.recipes__caption-row {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.caption__text,
+.caption__time {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+}
+.reservation {
+  padding: 100px 80px;
+  background-color: #f2f2f2;
+}
+
+.reservation__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.reservation__form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reservation__form label {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.reservation__form input[type="text"],
+.reservation__form input[type="number"],
+.reservation__form input[type="datetime-local"],
+.reservation__form input[type="email"] {
+  padding: 12px;
+  font-size: 16px;
+  font-family: "Inter", Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.reservation__checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.reservation__button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reservation__button:hover {
+  background-color: #1c5ed6;
+}
+.footer {
+  background-color: #f2f2f2;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.footer__links {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+footer.footer .paragraph {
+  margin-bottom: 5px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #838383;
+}
+.header {
+  position: relative;
+  height: 100vh;
+  padding: 30px 80px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("../images/background_header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  z-index: 2;
+  position: relative;
+}
+
+.nav__links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
