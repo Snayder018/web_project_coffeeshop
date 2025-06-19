@@ -6,11 +6,6 @@
 @import url("../blocks/reservation.css");
 @import url("../blocks/footer.css");
 
-.page {
-  background-color: #ffffff;
-  font-family: "Inter", sans-serif;
-  margin: 0;
-}
 body {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
@@ -356,6 +351,6 @@ footer.footer .paragraph {
   color: #6f6f6f;
 }
 
-.header__paragraph--bold {
+.header__paragraph_bold {
   font-weight: 800;
 }
