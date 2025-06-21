@@ -7,9 +7,15 @@
 @import url("../blocks/footer.css"); */
 
 .page {
-  background-color: #ffffff;
-  font-family: "Inter", sans-serif;
-  margin: 0;
+  .page {
+    margin: 0 auto;
+    min-width: 1100px;
+    max-width: 1600px;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6f6f6f;
+  }
 }
 
 body {
@@ -225,12 +231,12 @@ footer.footer .paragraph {
   box-sizing: border-box;
 }
 
-.header__nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__nav-links {
+.nav__links {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -238,11 +244,16 @@ footer.footer .paragraph {
   padding: 0;
 }
 
-.header__nav-link {
+.nav__link {
   color: #000000;
   text-decoration: none;
   font-weight: 500;
+  font-family: "Inter", Arial, sans-serif;
 }
+.nav__link:hover {
+  text-decoration: underline;
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
