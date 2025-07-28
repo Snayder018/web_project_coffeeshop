@@ -106,33 +106,38 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation">
-          <h3 class="reservation__title">Reserva una mesa</h3>
-          <form class="reservation__form form" action="#">
-  <fieldset class="form__fieldset">
-  <label class="form__label" for="nombre">
-    Nombre *
-    <input class="form__input" type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-  </label>
-  <label class="form__label" for="comensales">
-    Número de comensales *
-    <input class="form__input" type="number" id="comensales" name="comensales" min="1" max="8" placeholder="1-8" required />
-  </label>
-  <label class="form__label" for="fecha">
-    Fecha y hora *
-    <input class="form__input" type="datetime-local" id="fecha" name="fecha" required />
-  </label>
-  <label class="form__label" for="email">
-    Tu Correo electrónico
-    <input class="form__input" type="email" id="email" name="email" placeholder="email@email.com" />
-  </label>
+      <section class="reservation">
+  <h2 class="reservation__title">Reserva una mesa</h2>
+  <form class="reservation__form">
+    <label class="reservation__label">
+      Nombre *
+      <input type="text" class="reservation__input" placeholder="Nombre" required>
+    </label>
 
-  <button class="form__button" type="submit">Reservar una mesa</button>
-</fieldset>
+    <label class="reservation__label">
+      Número de comensales *
+      <select class="reservation__input" required>
+        <option value="">1-8</option>
+      </select>
+    </label>
+
+    <label class="reservation__label">
+      Fecha y hora *
+      <input type="datetime-local" class="reservation__input" required>
+    </label>
+
+    <label class="reservation__label">
+      Tu Correo electrónico
+      <input type="email" class="reservation__input" placeholder="email@email.com" required>
+    </label>
+
+    <button type="submit" class="reservation__button">Reservar una mesa</button>
+  </form>
 <label class="form__checkbox-group" for="terminos">
     <input class="form__checkbox" type="checkbox" id="terminos" required />
     <span>Acepto los términos de uso</span>
   </label>
+
 
         </section>
       </main>
