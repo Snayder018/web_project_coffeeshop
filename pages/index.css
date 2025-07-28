@@ -123,18 +123,22 @@
 }
 
 .reservation__title {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Noto Serif", serif;
+  font-size: 36px;
   font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
-  margin: 0 0 80px;
   text-align: center;
-  max-width: 385px;
+  margin: 0 auto 60px auto;
+  color: #2e2e2e;
+  max-width: 600px;
 }
 
 .reservation__form {
-  max-width: 385px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+  margin: 0 auto;
+  gap: 25px;
 }
 .form {
   display: flex;
@@ -144,34 +148,27 @@
 }
 
 .form__fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  width: 100%;
+  border: none;
   padding: 0;
   margin: 0;
-  border: none;
-  width: 100%;
 }
 
 .form__input {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  font-family: "Inter", Arial, sans-serif;
-  padding: 12px;
+  font-size: 16px;
+  padding: 10px 14px;
+  margin-top: 8px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 100%;
-  box-sizing: border-box;
+  font-family: inherit;
 }
 .form__label {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
+  color: #333;
   font-weight: 500;
-  line-height: 20px;
-  font-family: "Inter", Arial, sans-serif;
-  color: #000000;
 }
-
 .form__checkbox {
   width: 16px;
   height: 16px;
@@ -179,31 +176,28 @@
 .form__checkbox-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 8px;
   font-size: 14px;
-  font-family: "Inter", Arial, sans-serif;
-  margin: 20px 0;
-  align-self: flex-start;
+  color: #555;
+  margin-top: 20px;
 }
 
 .form__button {
-  margin-top: 60px;
-  width: 100%;
-  max-width: 385px;
-  padding: 16px 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  background-color: #2f80ed;
+  background-color: #2563eb;
   color: white;
+  padding: 12px 32px;
   border: none;
   border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
+  align-self: center;
 }
 
 .form__button:hover {
-  background-color: #1c5ed6;
+  background-color: #1d4ed8;
 }
 .footer {
   background-color: #f2f2f2;
