@@ -168,11 +168,11 @@
   flex-direction: column;
   gap: 8px;
 }
-.form__checkbox {
+.reservation__checkbox {
   width: 20px;
   height: 20px;
 }
-.form__checkbox-group {
+.reservation__checkbox-group {
   display: flex;
   align-items: center;
   gap: 12px;
