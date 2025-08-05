@@ -130,8 +130,8 @@
   font-weight: 500;
   line-height: 52px;
   color: #2a2a2a;
-  margin-bottom: 80px;
   text-align: center;
+  margin: 0 auto 80px;
 }
 
 .reservation__form {
