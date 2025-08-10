@@ -1,0 +1,21 @@
+.caption {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", Arial, sans-serif;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.caption__text,
+.caption__time {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+}

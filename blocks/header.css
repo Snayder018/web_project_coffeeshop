@@ -1,0 +1,130 @@
+.header {
+  position: relative;
+  height: 100vh;
+  padding: 30px 80px 0;
+  background-image: url("../images/background_header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 1100px;
+  box-sizing: border-box;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.header__description {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 638px;
+  margin: 0 0 8px;
+  color: #000000;
+  z-index: 2;
+}
+
+.header__text {
+  max-width: 660px;
+  z-index: 2;
+}
+.header__title {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  margin: 183px 0 28px 0px;
+  max-width: 709px;
+  z-index: 2;
+}
+.header__title-accent {
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+.header__title-bold {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #000000;
+}
+
+.header__schedule {
+  margin-top: auto;
+  margin-bottom: 80px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header__footer .header__schedule-address {
+  text-align: right;
+  align-items: flex-end;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+  object-fit: contain;
+}
+.header__logo {
+  width: 105px;
+  height: 39px;
+}
+.header__schedule-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+  margin-top: 40px;
+}
+.header__schedule-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 60px 0px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  margin: auto 0 0;
+}
+.header__paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+  color: #6f6f6f;
+}
+
+.header__paragraph_bold {
+  font-weight: 800;
+}
