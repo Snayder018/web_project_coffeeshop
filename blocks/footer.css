@@ -69,7 +69,13 @@
 .footer__list-item:hover {
   color: #c1c1c1;
 }
-
+.footer__copyright {
+  margin-top: 108px;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
 .footer__column-link {
   color: #ffffff;
   text-decoration: none;
@@ -81,14 +87,6 @@
 .footer__social-icon {
   height: 16px;
   width: 16px;
-}
-
-.paragraph {
-  margin-top: 108px;
-  font-family: "Inter", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .footer__links {
