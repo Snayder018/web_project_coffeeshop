@@ -1,41 +1,4 @@
-# sprint4
-.root {
-  background-color: #1E1E1E;
-}
-
-.font-container {
-  width: 90%;
-  margin: auto;
-  color: #fff;
-  padding: 40px 0;
-  border-bottom: 1px solid #fff;
-}
-
-.font-container:last-of-type {
-  border: none;
-}
-
-.font-container__text {
-  font-size: 90px;
-  margin: 0;
-}
-
-.font-container_font_ibm {
-  font-family: 'IBM Plex Serif', serif;
-}
-
-.font-container_font_ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.font-container_font_istok {
-  font-family: 'Istok Web', sans-serif;
-}
-
-.font-container__text_weight_bold {
-  font-weight: bold;
-}
-
-small {
-  font-size: 20%;
-}
+WEB_PROJECT_COFFEESHOP
+SNAYDER ANDERSON CORTEZ
+Esta es nuestra página de reservas, donde no solo puedes asegurar tu mesa, sino también ver todas nuestras recetas disponibles y leer una pequeña reseña sobre la esencia de nuestro café.
+Para una mejor experiencia, actualizaremos la interfaz de la página y añadiremos un pie de página con toda la información necesaria. En el futuro, podrás interactuar con ella y reservar tu mesa con solo un par de clics.
